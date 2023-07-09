@@ -1,0 +1,99 @@
+@BASE_URL = http://localhost:3000/api
+
+
+//GET
+
+###
+GET {{BASE_URL}}/gelirler
+###
+GET {{BASE_URL}}/giderler
+###
+GET {{BASE_URL}}/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlZjI4OTQxNzc3YjJiZDY5YWY2MDAiLCJpYXQiOjE2ODI4ODMyNjMsImV4cCI6MTY4Mjg4Njg2M30.U0ngk20VpQ7VuBvddKvZr5JK7yCYQ7p2nciiKo12554
+###
+GET {{BASE_URL}}/users/me
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDcyM2I0OTc5ZWJiMjNjMzM0NjVkMGEiLCJpYXQiOjE2ODUyMTE1MDMsImV4cCI6MTY4NTIxNTEwM30.IzA5clzxz-FzTr4xoitZ-fNc_U0VOUW7qlxFHZxE5WI
+
+
+
+//POST
+
+//User ekle
+###
+POST {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "email" : "test01@gmail.com",
+    "password" : "12345"
+}
+
+
+//user giriş
+###
+POST {{BASE_URL}}/users/login
+Content-Type: application/json
+
+{
+    "email" : "test01@gmail.com",
+    "sifre" : "12345"
+}
+
+
+//user çıkış
+###
+POST {{BASE_URL}}/users/cikis
+Content-Type: application/json
+
+{
+    "email" : "ome@gmail.com",
+    "sifre" : "12345678"
+}
+
+
+
+
+//gelir ekleme
+###
+POST {{BASE_URL}}/gelirler
+Content-Type: application/json
+
+{
+    "user" : "omeeee",
+    "tarih" : "12/12/2022",
+    "miktar": "121211",
+    "aciklama" : "omerin giderle",
+    "kategori" : "eğlence"
+}
+
+
+//gider ekleme
+###
+POST {{BASE_URL}}/giderler
+Content-Type: application/json
+
+{
+    "user" : "gfchbvcx",
+    "tarih" : "12/12/2022",
+    "miktar": "121211",
+    "aciklama" : "omerin giderleri",
+    "kategori" : "eğlence"
+}
+
+
+//DELETE
+
+
+###
+DELETE {{BASE_URL}}/users/
+###
+DELETE {{BASE_URL}}/gelirler/64174e7f8b3e57d03c37a56c
+###
+DELETE {{BASE_URL}}/giderler/6417501653ecc7153f81e544
+
+//Bütün userları silme(yönetici hariç)
+###
+DELETE {{BASE_URL}}/users/deleteAll
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlZTYzNDQwYmY5MDA1NmRjMmVhYjkiLCJpYXQiOjE2Nzk3NDkwMTYsImV4cCI6MTY3OTc1MjYxNn0.5QAtuQ5OMe8i3rlcecx0GCXeFH1jc6RB9PulPD-L5qA
