@@ -20,7 +20,6 @@
 First Header  | Second Header
 ------------- | -------------
 ADAN.COM  | Income
-| ------------- | ------------- |
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
