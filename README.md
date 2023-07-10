@@ -41,6 +41,7 @@ Purposes:
 | `help()`      | Display the help window.       |
 |  |     |
 
+| Income     |
 | Item      | Value |
 | --------- | -----:|
 | Rent  | $ |
