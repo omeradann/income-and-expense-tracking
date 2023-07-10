@@ -36,6 +36,7 @@
 | Trade  | $ |
 | Other  | $ |
 
+                
 ###FlowChart
 
 ```flow
