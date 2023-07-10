@@ -12,7 +12,8 @@
 
 # ADAN.COM
 
-![](<img src="C:/Users/lenovoo/Downloads/ADANCPY.jpg" alt="alt text" width="320" height="180">)
+![](file:///C:/Users/lenovoo/Desktop/Gelir%20-%20Gider%20App/income-and-expense-tracking/ADANCPY.jpg)
+
 
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
