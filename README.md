@@ -20,7 +20,9 @@
 First Header  | Second Header
 ------------- | -------------
 ADAN.COM  | Income
-    dvgsdgsd      | Expense
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
 | Function name | Description                    |
 | ------------- | ------------------------------ |
