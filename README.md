@@ -12,7 +12,7 @@
 
 # ADAN.COM
 
-![](file:///C:/Users/lenovoo/Desktop/Gelir%20-%20Gider%20App/income-and-expense-tracking/ADANCPY.jpg)
+![](file:///C:/Users/lenovoo/Downloads/ADAN.png)
 
 
 
