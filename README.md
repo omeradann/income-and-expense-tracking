@@ -31,9 +31,10 @@
 | Item      | Value |
 | --------- | -----:|
 | Rent  | $ |
-| Sales     |   $ |
-| Trade      |    $|
-
+| Salary     |   $ |
+| Interest      |    $|
+| Trade  | $ |
+| Other  | $ |
 
 ###FlowChart
 
