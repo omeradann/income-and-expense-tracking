@@ -12,8 +12,8 @@
 
 # ADAN.COM
 
-![]([file:///C:/Users/lenovoo/Downloads/ADANCPY%20(1).svg](https://www.canva.com/design/DAFoP4bsT9Y/4PUIAhHdz0eauicr_p4lig/view?utm_content=DAFoP4bsT9Y&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink))
-file:///C:/Users/lenovoo/Downloads/ADANCPY.jpg
+![](file:///C:/Users/lenovoo/Downloads/ADANCPY.jpg)
+
 
 ![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
 
