@@ -17,10 +17,11 @@
 
 ###Tables
                     
-Header  |
-------------- | -------------
-ADAN.COM  | Income
-|Expense | Content Cell  |
+| First Header  | Second Header |
+| ------------- | ------------- |
+| ADAN.COM | Income  |
+|   | Expense  |
+
 
 | Function name | Description                    |
 | ------------- | ------------------------------ |
