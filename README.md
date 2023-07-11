@@ -35,9 +35,9 @@ Backend terminal steps
 - `$ npm start`
 
 Client terminal steps
-`$ npm -y`
-`$ npm init`
-`$ npm start`
+- `$ npm -y`
+- `$ npm init`
+- `$ npm start`
 
 ###Tables
                     
