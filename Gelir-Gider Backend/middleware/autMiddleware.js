@@ -13,7 +13,7 @@ const auth =  async(req,res,next) => {
         } else {
          jwt.verify(authToken, 'secretkey' , (err, payload) => {
             if (err) {
-              next(createError(400, "token hatalı"));
+              next(createError(400, "token error"));
             }
             req.payload = payload;
             next();

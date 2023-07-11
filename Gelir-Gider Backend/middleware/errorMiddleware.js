@@ -1,8 +1,8 @@
 const findError = (err, req, res, next) => {
 
     res.json({
-        mesaj: err.message,
-        hataKodu: err.statusCode || 400
+        message: err.message,
+        errorCode: err.statusCode || 400
     })
 }
 
