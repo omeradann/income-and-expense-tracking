@@ -1,4 +1,4 @@
-const hataBul = (err, req, res, next) => {
+const findError = (err, req, res, next) => {
 
     res.json({
         mesaj: err.message,
@@ -7,4 +7,4 @@ const hataBul = (err, req, res, next) => {
 }
 
 
-module.exports = hataBul;
+module.exports = findError;
