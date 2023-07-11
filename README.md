@@ -4,6 +4,8 @@
 - Compatible with all major browsers (IE8+); 
 - Support identification, interpretation, fliter of the HTML tags;
 - Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
+- Filtering is under construction;
+- Graphic is under construction;
 
 # ADAN.COM
 
@@ -48,6 +50,16 @@ Purposes:
 | Salary     |   $ |
 | Interest      |    $|
 | Trade  | $ |
+| Other  | $ |
+
+
+| Expense     |
+| Item      | Value |
+| --------- | -----:|
+| Rent  | $ |
+| Entertainment     |   $ |
+| Service      |    $|
+| Health  | $ |
 | Other  | $ |
 
               
