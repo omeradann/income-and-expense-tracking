@@ -4,6 +4,8 @@
 - Compatible with all major browsers (IE8+); 
 - Support identification, interpretation, fliter of the HTML tags;
 - Support AMD/CMD (Require.js & Sea.js) Module Loader, and Custom/define editor plugins;
+- Filtering is under construction;
+- Graphic is under construction;
 
 # ADAN.COM
 
@@ -27,6 +29,15 @@ Purposes:
 
 -Debt management: Income and expense tracking can help you manage your debts. You can use it to determine which debts need to be paid and keep track of your payments.
 
+Backend terminal steps
+- `$ npm -y`
+- `$ npm init`
+- `$ npm start`
+
+Client terminal steps
+- `$ npm -y`
+- `$ npm init`
+- `$ npm start`
 
 ###Tables
                     
@@ -48,6 +59,16 @@ Purposes:
 | Salary     |   $ |
 | Interest      |    $|
 | Trade  | $ |
+| Other  | $ |
+
+
+| Expense     |
+| Item      | Value |
+| --------- | -----:|
+| Rent  | $ |
+| Entertainment     |   $ |
+| Service      |    $|
+| Health  | $ |
 | Other  | $ |
 
               
