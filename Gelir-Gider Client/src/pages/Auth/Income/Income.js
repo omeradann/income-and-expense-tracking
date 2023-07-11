@@ -21,15 +21,15 @@ import { useMemo, useState } from 'react';
 const current = new Date();
 
 function Income() {
-  const [filter, setFilter] = useState('')
+  // const [filter, setFilter] = useState('')
   const date = new Date().toISOString().slice(0,10);
 
-  const newGelirMutation = useMutation(saveIncome, {
+  const newIncomeMutation = useMutation(saveIncome, {
     onSuccess: () => queryClient.invalidateQueries("income:bring")
   })
 
   const handleSubmit = async (values,bag) => {
-      newGelirMutation.mutate(values)
+      newIncomeMutation.mutate(values)
   }
   
   const formik = useFormik({
@@ -40,7 +40,6 @@ function Income() {
         amount:"",
         category:""
     },
- //formik olmasaydı bu kısıma if yapısıyla kontrol edecektik
     
     validationSchema,
     onSubmit : handleSubmit   
@@ -134,7 +133,7 @@ function Income() {
         })
       }
     </div> */}
-
+<Input left="500px" placeholder='Filter' width='auto' borderColor="darkblue"/>
 
 <Text fontSize='3xl' w="300px">INCOMES</Text>
           

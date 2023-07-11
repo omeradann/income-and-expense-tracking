@@ -31,8 +31,8 @@ const handleLogin = () => {
         onSubmit: async (values ,bag) => {
             try {
                 const loginResponse = await fetchLogin({email : values.email , password: values.password});
-                if (loginResponse.hataKodu === 400 ) {
-                    // bag.setErrors({general : "Girilen email veya şifre hatalı"});
+                if (loginResponse.errorCode === 400 ) {
+                    bag.setErrors({general : "Invalid e-mail or password!"});
                 }
                 else{
                     console.log(loginResponse);

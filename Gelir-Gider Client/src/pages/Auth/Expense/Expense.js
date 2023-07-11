@@ -21,15 +21,15 @@ import { useMemo, useState } from 'react';
 const current = new Date();
 
 function Expense() {
-  const [filterData, setFilterData] = useState('')
+  // const [filterData, setFilterData] = useState('')
   const date = new Date().toISOString().slice(0,10);
 
-  const newGiderMutation = useMutation(saveExpense, {
+  const newExpenseMutation = useMutation(saveExpense, {
     onSuccess: () => queryClient.invalidateQueries("expense:bring")
   })
 
   const handleSubmit = async (values,bag) => {
-      newGiderMutation.mutate(values)
+      newExpenseMutation.mutate(values)
   }
   
   const formik = useFormik({
@@ -40,7 +40,6 @@ function Expense() {
         amount:"",
         category:""
     },
- //formik olmasaydı bu kısıma if yapısıyla kontrol edecektik
     
     validationSchema,
     onSubmit : handleSubmit   
@@ -115,7 +114,7 @@ function Expense() {
   return (
     <div>
 
-    <Input left="500px" placeholder='Filtrele'  width='auto' borderColor="darkblue"/>
+<Input left="500px" placeholder='Filter' width='auto' borderColor="darkblue"/>
 
 
 <Text fontSize='3xl' w="300px">EXPENSES</Text>
