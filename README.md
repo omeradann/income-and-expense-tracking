@@ -29,6 +29,8 @@ Purposes:
 
 -Debt management: Income and expense tracking can help you manage your debts. You can use it to determine which debts need to be paid and keep track of your payments.
 
+`$ npm -y`
+`$ npm init`
 
 ###Tables
                     
