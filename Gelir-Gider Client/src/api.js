@@ -22,7 +22,7 @@ axios.interceptors.request.use(
   });
 
   //User
-  export const fetchKayitOl = async (input) => {
+  export const fetchRegister = async (input) => {
 const {data} = await axios.post("http://localhost:3000/api/users", input)
 return data;
 };

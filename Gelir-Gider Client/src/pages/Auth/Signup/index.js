@@ -12,7 +12,7 @@ import {
   FormErrorMessage,
 } from "@chakra-ui/react";
 import validationSchema from "./signupValidations";
-import { fetchKayitOl } from "../../../api";
+import { fetchRegister } from "../../../api";
 import {useAuth} from '../../../context/AuthContext';
 import { useNavigate } from 'react-router-dom'
 
@@ -31,14 +31,14 @@ function Signup() {
     onSubmit: async (values, bag) => {
       //formik olmasaydı bu kısıma if yapısıyla kontrol edecektik
       try {
-        const registerResponse = await fetchKayitOl({
+        const registerResponse = await fetchRegister({
           email: values.email,
           password: values.password,
         });
 
        
         if (registerResponse.hataKodu === 400) {
-          bag.setErrors({ general: "Mail zaten kullanılıyor." });
+          bag.setErrors({ general: "Email already in use." });
         } else {
           console.log(registerResponse); 
           login(registerResponse);
@@ -64,7 +64,7 @@ function Signup() {
       <Flex align="center" width="full" justifyContent="center">
         <Box pt={10}>
           <Box>
-            <Heading>KAYIT OL</Heading>
+            <Heading>SIGN UP</Heading>
           </Box>
           <Box my={5}>
             {formik.errors.general && (
@@ -120,7 +120,7 @@ function Signup() {
                 <br></br>
 
                 <Button mt="4" type="submit" colorScheme="blue">
-                  Onayla
+                  Confirm
                 </Button>
               </FormControl>
             </form>
