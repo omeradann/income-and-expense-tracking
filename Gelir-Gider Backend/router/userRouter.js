@@ -4,8 +4,9 @@ const userController = require('../controllers/userController');
 const User = require('../model/userModel');
 
 
-
+//auth middleware
 const autMiddleware = require('../middleware/autMiddleware');
+//admin middleware
 // const adminMiddleware = require('../middleware/adminMiddleware');
 
 

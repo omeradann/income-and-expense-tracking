@@ -57,7 +57,7 @@ userSchema.methods.generateToken = async function() {
 };
 
 userSchema.statics.signIn = async (email, password) => {
-    // const {error, value} = schema.validate({email, sifre});
+     const {error, value} = schema.validate({email, password});
     
     const user = await User.findOne({ email });
 

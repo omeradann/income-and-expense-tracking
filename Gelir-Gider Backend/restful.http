@@ -4,9 +4,9 @@
 //GET
 
 ###
-GET {{BASE_URL}}/gelirler
+GET {{BASE_URL}}/income
 ###
-GET {{BASE_URL}}/giderler
+GET {{BASE_URL}}/expense
 ###
 GET {{BASE_URL}}/users
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDFlZjI4OTQxNzc3YjJiZDY5YWY2MDAiLCJpYXQiOjE2ODI4ODMyNjMsImV4cCI6MTY4Mjg4Njg2M30.U0ngk20VpQ7VuBvddKvZr5JK7yCYQ7p2nciiKo12554
@@ -19,7 +19,7 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDcyM2I0OTc5ZWJi
 
 //POST
 
-//User ekle
+//User add
 ###
 POST {{BASE_URL}}/users
 Content-Type: application/json
@@ -30,55 +30,55 @@ Content-Type: application/json
 }
 
 
-//user giriş
+//user login
 ###
 POST {{BASE_URL}}/users/login
 Content-Type: application/json
 
 {
     "email" : "test01@gmail.com",
-    "sifre" : "12345"
+    "password" : "12345"
 }
 
 
-//user çıkış
+//user logout
 ###
-POST {{BASE_URL}}/users/cikis
+POST {{BASE_URL}}/users/logout
 Content-Type: application/json
 
 {
     "email" : "ome@gmail.com",
-    "sifre" : "12345678"
+    "password" : "12345678"
 }
 
 
 
 
-//gelir ekleme
+//income add
 ###
-POST {{BASE_URL}}/gelirler
+POST {{BASE_URL}}/income
 Content-Type: application/json
 
 {
     "user" : "omeeee",
-    "tarih" : "12/12/2022",
-    "miktar": "121211",
-    "aciklama" : "omerin giderle",
-    "kategori" : "eğlence"
+    "date" : "12/12/2022",
+    "amount": "121211",
+    "explanation" : "omerin giderle",
+    "category" : "eğlence"
 }
 
 
-//gider ekleme
+//expense add
 ###
-POST {{BASE_URL}}/giderler
+POST {{BASE_URL}}/expense
 Content-Type: application/json
 
 {
     "user" : "gfchbvcx",
-    "tarih" : "12/12/2022",
-    "miktar": "121211",
-    "aciklama" : "omerin giderleri",
-    "kategori" : "eğlence"
+    "date" : "12/12/2022",
+    "amount": "121211",
+    "explanation" : "omerin giderleri",
+    "category" : "eğlence"
 }
 
 
@@ -88,11 +88,11 @@ Content-Type: application/json
 ###
 DELETE {{BASE_URL}}/users/
 ###
-DELETE {{BASE_URL}}/gelirler/64174e7f8b3e57d03c37a56c
+DELETE {{BASE_URL}}/income/64174e7f8b3e57d03c37a56c
 ###
-DELETE {{BASE_URL}}/giderler/6417501653ecc7153f81e544
+DELETE {{BASE_URL}}/expense/6417501653ecc7153f81e544
 
-//Bütün userları silme(yönetici hariç)
+//All user delete(except the manager)
 ###
 DELETE {{BASE_URL}}/users/deleteAll
 Content-Type: application/json
