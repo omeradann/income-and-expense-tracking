@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema
-// const Joi = require('joi');
+const Joi = require('joi');
 const createError = require('http-errors');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -25,11 +25,18 @@ const userSchema = new Schema({
 }, {collection: "users", timestamps: true});
 
 //joi
-// const schema = Joi.object({
-//     email: Joi.string().trim().email(),
-//     sifre: Joi.string().trim()
-// });
+userSchema.methods.joiValidation = function (userObject) {
+     const schema = Joi.object({
+     email: Joi.string().trim().email(),
+     password: Joi.string().trim()
+ });
+ 
+    return schema.validate(userObject);
 
+};
+
+
+ 
 
 userSchema.methods.toJSON=function() {
     const user = this.toObject();
@@ -39,7 +46,7 @@ userSchema.methods.toJSON=function() {
     delete user.__v;
 
     return user
-}
+};
 
 
 userSchema.methods.generateToken = async function() {
@@ -47,7 +54,7 @@ userSchema.methods.generateToken = async function() {
     const token = await jwt.sign({_id: loggedInUser._id} , 'secretkey', {expiresIn: '1h'});
     const refreshToken = await jwt.sign({_id: loggedInUser._id} , 'secretkey', {expiresIn: '90d'});
     return {token,refreshToken};
-}
+};
 
 userSchema.statics.signIn = async (email, password) => {
     // const {error, value} = schema.validate({email, sifre});
