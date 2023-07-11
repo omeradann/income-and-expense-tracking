@@ -43,7 +43,7 @@ function Navbar() {
           <>
 
             {
-              user?._id === "647b2ade54d21524ae1d9374" && (
+              user?._id === "64ad6eb52f672a981281e3da" && (
                 <Link to="/admin">
                   <Button colorScheme="pink" variant="ghost">Admin</Button>
                 </Link>

@@ -34,6 +34,6 @@ app.get("/", (req, res) => {
 
 app.use(errorMiddleware);
 
-app.listen(4000, () => {
-console.log("The server was booted from port 4000!");
+app.listen(3000, () => {
+console.log("The server was booted from port 3000!");
 })
