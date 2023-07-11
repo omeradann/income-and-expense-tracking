@@ -7,8 +7,8 @@ const createError = require('http-errors');
 const auth =  async(req,res,next) => {
     try {
         const authToken = req.headers["authorization"]
-        //?.split(' ')[1]; jwt.verify işlevinize Bearer *************... gibi bir belirteç aktarıyorsanız, bunu yaparak jwt'ye aktarmadan önce belirteci böldüğünüzden emin olun
-        if (!authToken) {                                           //İsteğe bağlı zincirleme operatörü ?. data değişkeni undefined veya null değerine eşit değilse split() yöntemini çağırır, aksi halde undefined değerini döndürür ve hiçbir hata atılmaz.
+      
+        if (!authToken) {                                     
           next(createError(400, 'invalid'))
         } else {
          jwt.verify(authToken, 'secretkey' , (err, payload) => {
@@ -20,8 +20,7 @@ const auth =  async(req,res,next) => {
     
          })}
       
-        // req.user =await User.findById({_id: sonuc._id})
-        // req.user = sonuc
+       
       
     } catch (error) {
         console.log(error);

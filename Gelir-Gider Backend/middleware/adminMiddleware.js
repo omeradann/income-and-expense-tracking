@@ -1,16 +1,16 @@
 
-const admin = (req,res,next) => {
+// const admin = (req,res,next) => {
     
     
-        if (!req.payload.isAdmin) {
-            return res.status(403).json({
-               mesaj: "admin değilsiniz"
-            })
-        }
-         next();
+//         if (!req.payload.isAdmin) {
+//             return res.status(403).json({
+//                message: "you are not admin"
+//             })
+//         }
+//          next();
  
-    }
+//     }
         
 
 
-// module.exports = admin;
+// // module.exports = admin;
