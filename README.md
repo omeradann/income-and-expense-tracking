@@ -30,9 +30,9 @@ Purposes:
 -Debt management: Income and expense tracking can help you manage your debts. You can use it to determine which debts need to be paid and keep track of your payments.
 
 Backend terminal steps
-`$ npm -y`
-`$ npm init`
-`$ npm start`
+- `$ npm -y`
+- `$ npm init`
+- `$ npm start`
 
 Client terminal steps
 `$ npm -y`
